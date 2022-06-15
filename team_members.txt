@@ -1,6 +1,7 @@
 Students Name   &   Student code
 1.Deepak Patil      fw19_0456
-2.Nayan Singh       fw18_0825
-3.Omkar Chauhan     fw19_0465
-4.Meher             fw19_0636
-5.Bhujang Devshette fp04_045
+2.Pankaj More       fw19_0617
+3.Nayan Singh       fw18_0825
+4.Omkar Chauhan     fw19_0465
+5.Meher             fw19_0636
+6.Bhujang Devshette fp04_045
