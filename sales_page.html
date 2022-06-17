@@ -539,6 +539,12 @@
     width: 220px;
     height: 250px;
 }
+.main-box1>div:nth-child(1)>img {
+    height: 210px;
+}
+.main-box1>div:nth-child(2)>img {
+    height: 220px;
+}
 .main-box1>div>p {
     color: blue;
     font-style: italic;
@@ -606,6 +612,9 @@
 .main-box3>div>img {
     width: 220px;
     height: 220px;
+}
+.main-box3>div:nth-child(2)>img {
+    height: 190px;
 }
 .main-box3>div>p {
     color: blue;
@@ -675,6 +684,9 @@
     width: 220px;
     height: 220px;
 }
+.main-box5>div:nth-child(3)>img {
+    height: 190px;
+}   
 .main-box5>div>p {
     color: blue;
     font-style: italic;
@@ -943,6 +955,35 @@
 }
 #last>div>p {
     color: rgb(106, 101, 101);
+}
+#last1 {
+    margin: auto;
+    margin-right: 130px;
+    border: 1px solid transparent;
+    width: 30%;
+    margin-top: 20px;
+
+}
+#last1>img {
+    width: 350px;
+    height: 100px;
+}
+#last2 {
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    color: rgb(103, 99, 99);
+    background-color: rgb(237, 226, 226);
+}
+#last3 {
+    text-align: center;
+    color: rgb(103, 99, 99);
+    background-color: rgb(237, 226, 226);
+    margin-top: -18px;
+    margin-bottom: 20px;
+}
+.main-box1>div:first-child {
+    height: 50px;
 }
 
     </style>
@@ -1512,7 +1553,7 @@
                 <button>Add to Bag</button>
             </div>
             <div>
-                <img src="hhttps://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6ac800b1/crop/026397332_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" 
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6ac800b1/crop/026397332_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" 
                 alt="error">
                 <p>New !</p>
                 <h2>Eucalyptus Rain</h2>
@@ -1603,6 +1644,23 @@
             <p>Global Locations</p>
         </div>
     </div>
+
+    <div id="last1">
+        <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0c8e6af7/images/evergreen/Happiness_Guaranteedtimes2_v2.jpg?yocs=o_s_" 
+             alt="error">
+    </div>
+    <div id="last2">
+        <p>Terms of Use</p>
+        <p>Privacy Policy</p>
+        <p>Security Bug Report</p>
+        <p>California Privacy Rights</p>
+        <p>Do Not Sell My Personal Information (California)</p>
+        <p>Transpaerncy in Supply Chains</p>
+        <p>Ad Preference</p>
+    </div>
+    <div id="last3">
+        <p>2022 Bath & Body Works Direct, Inc. All Rights Registered</p>
+    </div>
 </body>
 </html>
 
@@ -1614,7 +1672,6 @@
 function myFunction1() {
 document.getElementById("myDropdown1").classList.toggle("show");
 }
-
 function filter1Function() {
   var input, filter, ul, li, a, i;
   input = document.getElementById("myInput1");
@@ -1689,17 +1746,18 @@ function filter4Function() {
 }
 
 let btn=document.querySelector("#main-box>div>div>button");
-btn.addEventListener("click", myfunc)
+btn.addEventListener("click", myfunc);
 let arr=[];
 function myfunc(event) {
     event.preventDefault();
     let obj={};
     obj.imag=document.querySelector("#main-box>div>div>img");
-    obj.text1=document.querySelector("#main-box>div>div>p");
+    obj.text1=document.querySelector("#main-box>div>div>img+p");
     obj.text2=document.querySelector("#main-box>div>div>h2");
-    obj.text2=document.querySelector("#main-box>div>div>p");
-    obj.price=document.querySelector("#main-box>div>div>h1");
+    obj.text2=document.querySelector("#main-box>div>div>h2+p");
+    obj.price=document.querySelector("#main-box>div>div>h2");
     arr.push(obj);
+    console.log(arr);
 
     localStorage.setItem("details", JSON.stringify(arr));
 }
