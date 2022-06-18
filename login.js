@@ -55,6 +55,7 @@ function setToLS(info){
 
 document.getElementById("createAccount").addEventListener("click", function(){
     window.location.href = "signup.html"
+    // window.location.href = "index.html"
 })
 
 //============================================nav-bar code starts here==================================================

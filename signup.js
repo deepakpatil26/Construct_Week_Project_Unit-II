@@ -1,8 +1,8 @@
 document.getElementById("createAccount").addEventListener("click", getUserData)
+var data =JSON.parse(localStorage.getItem("createaccount")) || [];
 
 async function getUserData(event) {
     event.preventDefault();
-    var data = [];
     let Fname = document.getElementById("signUpFName").value
     let Lname = document.getElementById("signUpLName").value
     let email = document.getElementById("signUpEmail").value
