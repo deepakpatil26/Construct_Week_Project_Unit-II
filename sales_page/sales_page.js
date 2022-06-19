@@ -80,11 +80,11 @@ function myFunction1() {
     function myfunc(event) {
         event.preventDefault();
         let obj={};
-        obj.imag=document.querySelector("#main-box>div>div>img");
-        obj.text1=document.querySelector("#main-box>div>div>img+p");
-        obj.text2=document.querySelector("#main-box>div>div>h2");
-        obj.text2=document.querySelector("#main-box>div>div>h2+p");
-        obj.price=document.querySelector("#main-box>div>div>h2");
+        obj.imag=document.querySelector("#main-box>div>div>img").value;
+        obj.text1=document.querySelector("#main-box>div>div>img+p").value;
+        obj.text2=document.querySelector("#main-box>div>div>h2").value;
+        obj.text2=document.querySelector("#main-box>div>div>h2+p").value;
+        obj.price=document.querySelector("#main-box>div>div>h2").value;
         arr.push(obj);
         console.log(arr);
     
