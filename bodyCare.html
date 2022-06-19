@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        #top{
+            background-color: #f3f3f3;
+            display:flex;
+            width:100%;
+            height:40px;
+            align-items:center;
+            justify-content:flex-end;
+        }
+        #top>div:nth-child(2){
+            margin-right:40px;
+            margin-left:10px;
+        }
+        #main{
+            background-color: rgb(237, 236, 236);
+            width: auto;
+            height: auto;
+        }
+        #first{
+           
+            height: 60px;
+            width: 100%;
+            margin-top: 30px;
+            display: flex;
+            background-color: white;
+           
+           justify-content:flex-end;
+        }
+        #first>div{
+          
+            height: 100%;
+            width: 400px;
+            margin-right:0px;
+            display: flex;
+            align-items: center;
+            justify-content:flex-end;
+        }
+        .sear>div{
+          
+            height: 40px;
+            width: auto;
+          
+           margin-right: 20px;
+            display: flex;
+        }
+        #navbar{
+            height: 40px;
+            width: 100%;
+           background-color: white;
+           
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #navbar>div{
+          
+            width: auto;
+            height: auto;
+            color: gray;
+            font-size: 13px;
+            
+        }
+        hr{
+            color: red;
+        }
+        #head{
+           
+            
+            height:auto;
+            
+            margin-top: 3px;
+            background-color: white;
+            display: flex;
+        }
+        #head>div{
+            
+            width:auto;
+           
+           
+        }
+        #head>div:nth-child(1){
+            width: 180px;
+            
+            margin-left: 10px;
+           
+        }
+        #head>div:nth-child(2){
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+        #head>div>p:nth-child(1){
+            margin-top: 5px;
+           
+        }
+        button{
+            background-color: white;
+            text-align: left;
+            border: transparent;
+            margin-bottom: 20px;
+            color: grey;
+            margin-left: -5px;
+        }
+        #main2>div{
+          
+            width: 100%;
+            height: auto;
+        }
+        #second{
+         
+          height: 40px;
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+        }
+        #second>div{
+            margin-right: 20px;
+        
+           
+            
+        }
+        #second>div>h2{
+            margin-right: 480px;
+            color: grey;
+        }
+    #second>div:nth-child(2){
+        background-color: rgb(218, 218, 218);
+        width: 38px;
+        height: 30px;
+        text-align: center;
+        padding-top:14px ;
+        border-radius: 50%;
+    }
+        #second>div:nth-child(6){
+           
+           margin-right: 0px;
+        }
+        #img>img{
+           
+            width: 95%;
+            margin: center;
+            margin-top: -9px;
+            margin-left: 20px;
+           
+        }
+        hr{
+            margin-top: -8px;
+
+            background-color: black;
+           
+        }
+        #third{
+           
+            display: grid;
+            grid-template-columns: repeat(2, 420px);
+            grid-template-rows: repeat(3, 55px);
+            gap: 20px;
+           width: 100%;
+           justify-content:center;
+            margin-top: 30px;
+            text-align: center;
+
+        }
+        #third>div{
+          
+            background-color: rgb(45, 45, 45);
+            color: white;
+            width: 100%;
+           padding-top: 15px;
+        }
+       #four{
+       display: flex;
+       justify-content: space-around;
+       margin-top: 50px;
+       }
+       #four>div{
+        /* border: 1px solid blue; */
+        height: 60px;
+       
+       align-items: center;
+       margin-left: 20px;
+       }
+       .four1{
+        display: flex;
+        margin-left: 0px;
+      justify-content: space-evenly;
+      align-items: center;
+       }
+       #four>div>button{
+        margin-top: 25px;
+        margin-left: 20px;
+        color: black;
+       }
+       #four>div>button:hover{
+         color:#f1f1f1
+       }
+       #five{
+      
+        display: flex;
+        margin-top: 10px;
+       
+       }
+       #five>div{
+       
+        height: 40px;
+        padding-top: 22px;
+        margin-left: 15px;
+      
+       }
+       #six{
+        
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(13, 550px);
+        justify-content: center;
+        gap: 20px;
+       }
+       #six>div{
+         
+          margin-top: 30px;
+         
+       }
+       #six>div>img{
+        height: 65%;
+       width: 65%;
+       margin-left:40px;
+      
+       }
+       #six>div>h3{
+           text-align: center;
+           margin-top: -20px;
+       }
+       #six>div>p{
+        text-align: center;
+           margin-top: -16px;
+           font-size: 14px;
+       }
+       #six>div>button{
+          background-color: rgb(29, 29, 29);
+          color:white;
+          width: 100%;
+          height: 40px;
+          margin-left: 1px;
+          padding-left: 70px;
+          align-items: center;
+       }
+       #six>div>button:hover{
+        background-color:rgb(241, 241, 241);
+       color: black;
+       }
+       #six1{
+        display: flex;
+       justify-content: center;
+      margin-top: -5px;
+       margin-bottom: -10px;
+      
+       }
+       #six1>h3:nth-child(1){
+        color: gray;
+       }
+       #six1>h3:nth-child(2){
+        color: red;
+        margin-left: 10px;
+       }
+       .checked{
+        color: orange;
+       }
+       #seven{
+        
+        display: flex;
+        justify-content: flex-end;
+        align-content: center;
+        margin-top: 80px;
+       }
+       #seven>div{
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 10px;
+        height: 40px;
+        text-align: center;
+       }
+    #seven>div:nth-child(1){
+       
+       padding-top: 10px;
+       border-radius: 50%;
+        width: 35px;
+        height: 30px;
+        margin-top: 2px;
+     background-color: rgb(218, 218, 218);
+    }
+      #seven>div:nth-child(6){
+        margin-left: -10px;
+        
+      }
+      #ten{
+        
+        width: 100%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        margin-top: 30px;
+       
+      }
+      #ten>div{
+          
+          width: auto;
+          margin-left: 0px;
+          margin-left: 42px;
+      }
+      #ten>div>p{
+        color:grey;
+      }
+      #ten>div:nth-child(1){
+        width: 300px;
+        margin-left:px;
+      }
+      input{
+        margin-top: 0px;
+      }
+      #nine{
+       
+        width: 94%;
+        height: auto;
+        margin:auto;
+        display: flex;
+        justify-content: space-between;
+        margin-left:30px;
+      }
+      #nine>div:nth-child(1)>a{
+      
+        margin-left:10px;
+        height:12px;
+        width:12px;
+      }
+      
+      .fa {  
+  padding: 10px;  
+text-align: center;  
+  margin: 2px 2px;  
+  font-size: 15px;  
+  width: 15px;  
+}  
+.fa-facebook {  
+  background: #3B5998;  
+  color: white;
+  border-radius: 50%;  
+}  
+ 
+.fa-twitter {  
+  background: #55ACEE;  
+  color: white; 
+  border-radius: 50%;   
+}  
+.fa-pinterest {  
+  background: #cb2027;  
+  color: white;
+  border-radius: 50%;    
+}  
+ 
+.fa-instagram {  
+  background: #125688;  
+  color: white; 
+  border-radius: 50%;   
+}  
+.fa-youtube {  
+  background: #bb0000;  
+  color: white;
+  border-radius: 50%;    
+}  
+.fa-tiktok {  
+  background: #125688;  
+  color: white;
+  border-radius: 50%;    
+}
+.fa:hover {  
+    opacity: 0.9;  
+}
+.dropbtn {
+ 
+  color: grey;
+  padding: 0px;
+  font-size: 13px;
+  border: none;
+  margin-bottom:1px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 170px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown-content a:hover {
+    color:blue;
+   
+}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+
+.btn>button{
+    background-color: rgb(29, 29, 29);
+          color:white;
+          width: 100%;
+          height: 40px;
+          margin-left: 1px;
+}
+
+#ten>div>p:hover{
+  background-color: white;
+  color: rgb(65, 48, 218);
+}
+.part1>button:hover{
+  color: rgb(61, 61, 217);
+}
+
+
+     
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div style="color:rgb(44, 74, 181);"> <img src="" alt="">PICK UP IN STORE </div>
+                <div style="text-decoration: underline;" >Set Store</a></div>
+    </div>
+    <div id="main">
+    <div id="first">
+        <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwa9385fe9/images/svg-icons/Logos-main.svg?yocs=o_s_" alt="">
+        </div>
+        <div class="sear">
+            <div>
+                   <input type="text" placeholder=" Search by fregran...  🔍">
+            </div>
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw3e39cc25/images/svg-icons/UI-MyAccount.svg?yocs=o_s_" alt="">
+            </div>
+            <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw3e39cc25/images/svg-icons/UI-MyAccount.svg?yocs=o_s_" alt="">
+            </div>
+        </div>
+       
+    </div>
+
+    <div id="navbar">
+      <div class="dropdown">
+        <button class="dropbtn">ALL SALE</button>
+        <div class="dropdown-content">
+          <a href="#">SHOP BY CATEGORY ></a>
+          <a href="#">EXPLORE ALL SALE ></a>
+          <a href="#">ALL SALE OFFERES ></a>
+     </div>
+     </div>
+     <div class="dropdown">
+        <button class="dropbtn">BODY CARE</button>
+        <div class="dropdown-content">
+          <a href="https://www.bathandbodyworks.com/c/body-care/all-bath-shower">BATH & SHOWER</a>
+          <a href="https://www.bathandbodyworks.com/c/body-care/all-moisturizers">MOISTURIZERS</a>
+          <a href="https://www.bathandbodyworks.com/c/body-care/all-fragrance">FRAGRANCE</a>
+          <a href="#">AROMATHERAPY</a>
+          <a href="#">FEATURED</a>
+          <a href="#">EXPLORE BODY CARE</a>
+        </div>
+     </div>
+     <div class="dropdown">
+        <button class="dropbtn">CANDLES</button>
+        <div class="dropdown-content">
+          <a href="https://www.bathandbodyworks.com/c/all-candles/3-wick-candles">ALL CANDLES</a>
+         
+         
+          <a href="https://www.bathandbodyworks.com/c/all-candles/white-barn-shop">FEATURED</a>
+          <a href="#">EXPLORE CANDLES</a>
+          <a href="#">CANDLES OFFERES</a>
+        </div>
+     </div>
+     <div class="dropdown">
+        <button class="dropbtn">HOME FRAGRANCE</button>
+        <div class="dropdown-content">
+          <a href="#">AIR FRAGRANCE</a>
+         
+         
+          <a href="#">FEATURED</a>
+          <a href="#">EXPLORE HOME FAGRANCE</a>
+          <a href="#">HOME FRAGRANCE OFFERES</a>
+     </div>
+    </div>
+     <div class="dropdown">
+        <button class="dropbtn">HAND SOAPS & SANITIZERS</button>
+        <div class="dropdown-content">
+          <a href="#">HAND SOAP</a>
+         
+          <a href="#">HAND SANITIZERS</a>
+          <a href="#">FEATURED</a>
+          <a href="#">EXPLORE HAND SOAPS & SANITIZERS</a>
+          <a href="#">HAND SOAPS & SANITIZERS OFFERES</a>
+     </div>
+     </div>
+     <div class="dropdown">
+      <button class="dropbtn">MEN'S</button>
+      <div class="dropdown-content">
+        <a href="#">THE MEN'S SOAPS</a>
+        <a href="#">EXPLORE MEN'S</a>
+        
+   </div>
+   </div>
+   <div class="dropdown">
+    <button class="dropbtn">GIFTS</button>
+    <div class="dropdown-content">
+      <a href="#">FEATURED</a>
+      <a href="#">GIFTS BY RECIPIENT</a>
+      <a href="#">COLLECTIONS</a>
+      <a href="#">GIFT CARDS</a>
+      <a href="#">EXPLORE GIFTS</a>
+      <a href="#">GIFTS OFFERES</a>
+ </div>
+ </div>
+ <div class="dropdown">
+  <button class="dropbtn">BEST SELLERS</button>
+  <div class="dropdown-content">
+    <a href="#">NEW & NOW</a>
+    <a href="#">EXPLORE BEST SELLERS</a>
+   
+</div>
+</div>
+    </div>
+ 
+    
+    <div id="head">
+        <div class="part1">
+            <p>HOME / BODY CARE </p>
+             <h5>TOP OFFERS</h5>
+            <button>$5.50 Select Men's Body Care</button>
+             <button>$4.95 Select Body Care</button>
+             <button>All Sale Body Care</button>
+             <h5>BATH & SHOWER</h5>
+             <button>All Bath & Shower</button>
+             <button>Body Wash & Shower Gel</button>
+             <button>Bubble Bath</button>
+             <button>Body Scrub</button>
+             <button>Bar Soap</button>
+             <button>Bath Accessories</button>
+             <h5>MOISTURIZERS</h5>
+             <button>All Moisturizers</button>
+             <button>Body Lotion</button>
+             <button>Body Cream</button>
+             <button>Hand Cream</button>
+             <button>Lip Gloss & Balms</button>
+             <h5>FRAGRANCE</h5>
+             <button>All Fragrance</button>
+             <button>Body Sprays & Mists</button>
+             <button>Perfume & Cologne</button>
+             <h5>AROMATHERAPY</h5>
+             <button>All Aromatherapy</button>
+             <button>Body Wash & Shower Gel</button>
+             <button>Moisturizers</button>
+             <button>Mists & Sprays</button>
+             <h5>FEATURED</h5>
+             <button>Retired Fragrances</button>
+             <button>Travel Size</button>
+        </div>
+    
+       <div id="main2">
+        <div id="second">
+
+        
+            <div> 
+                <h2>All Body Care</h2>
+            </div>
+           <div>1</div>
+           <div>2</div>
+           <div>3</div>
+           <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw2d6a89be/images/svg-icons/pagination-arrow.svg?yocs=o_s_" alt="">
+           </div>
+           <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw2d6a89be/images/svg-icons/pagination-arrow.svg?yocs=o_s_" alt=""> 
+            </div>
+            <div>
+            <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw2d6a89be/images/svg-icons/pagination-arrow.svg?yocs=o_s_" alt="">
+            </div>
+            <div>602 Items</div>
+            </div>
+            <hr>
+            <div id="img">
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0817b914/images/Spring2022/tbctier_sp3_gh.jpg?yocs=s_" alt="">
+            </div> 
+            <div id="third">
+              <div>ALL BODY CARE</div>
+              
+              <div>FRAGRANCE</div>
+              
+              <div>BATH & SHOWER</div>
+              <div>MOISTURIZERS</div>
+              <div>AROMATHERAPY</div>
+              <div>MEN'S</div>
+            </div>
+            <div id="four">
+                <div class="four1">
+                    <div> Filter By :</div>
+                   
+                    <button>PRODUCT TYPE <select name="" id="" style="margin-left: 30px; border: transparent;"></select><hr style="width: 160px; margin-top:1px;"></button>
+                   
+                    <button>FRAGRANCE NAME <select name="category" id="" style="margin-left: 20px; border: transparent;"></select><hr style="width: 170px; margin-top:1px;"></buttton>
+                    <button>FRAGRANCE CATEGORY <select name="category" id="" style="margin-left: 15px; border: transparent;"></select><hr style="width: 200px; margin-top:1px;"></button>
+                </div>
+                <div> <button>SORT BY <select name="category" id="" style="margin-left: 20px; border: transparent;"></select><hr style="width: 100px; margin-top:1px;"></button></div>
+               
+            </div>
+           <hr style="margin-top:10px; background-color:grey; height:0px;">
+            
+            <div id="five">
+            
+                <div style="color:rgb(44, 74, 181);"> <img src="" alt="">SHOP YOUR STORE: </div>
+                <div style="text-decoration: underline;"> Set Store</div>
+            </div>
+            <hr style=" background-color:grey; margin-top:5px;">
+            <div id="six">
+               <div>
+               <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6076a305/crop/026477886_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"  alt="">
+               
+               <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+               <h3>Coconut Pineapple</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+               
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$8.25</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+            </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5ac3227c/crop/026479715_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Oasis</h3>
+               <p>Ultimate Hydration Body Cream</p>
+               <div id="six1">
+                
+                <h3>$15.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+                <i style="color:orange;" class="fa fa-star"></i>
+                <i style="color:orange;  margin-left:1px;;" class="fa fa-star"></i>
+                <i style="color:orange;" class="fa fa-star"></i>
+                <i style="color:orange;" class="fa fa-star-half-o"></i>
+                <i style="color:orange;" class="fa fa-star-half-o"></i>
+                
+
+            </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwed821d75/crop/026360591_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">Online Exclusive</h5>
+                <h3>Happy Vibes</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$15.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               
+               </div>
+               <div>
+                <img style="height: auto; width: 100%; margin: 195px 0px 0px 0px;" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw62d2e0db/crop/026399293_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Clean Slate</h3>
+               <p>Shea Butter Cleansing Bar</p>
+               <div id="six1">
+                
+                <h3>$8.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$2.13</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbd34878b/crop/026402518_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Bahamas Passionfruit & Banana Flower</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3 style="margin-top: -2px;">$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3 style="margin-top: -2px;">$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd97a1d30/crop/026240388_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>A Thousand Wishes</h3>
+               <p>Travel Size Body Lotion</p>
+               <div id="six1">
+                
+                <h3>$6.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$1.63</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8dac0f70/crop/026399713_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3 class="tittle">Bubbly Rosé</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$4.12</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img style="height: auto; width: 100%; margin-left: 0px;" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw6d16fcf8/images/Summer2022/xcat_mens-shop_su1_gpt.jpg?yocs=s_" alt="">
+               
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd65b4d05/crop/026398827_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Whipped Berry Meringue</h3>
+               <p>Ultimate Hydration Body Cream</p>
+               <div id="six1">
+                
+                <h3><hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.87</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw99256f15/crop/026399710_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Bubbly Rosé</h3>
+               <p>Shower Gel</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.37</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6001e2b0/crop/026297834_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">Online Exclusive</h5>
+                <h3>Sea Island Shore</h3>
+               <p>Ultimate Hydration Body Cream</p>
+               <div id="six1">
+                
+                <h3>$15.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.87</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2f7f9dab/crop/026480833_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>One in a Million</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img  style="height: auto; width: 100%; margin-left: 0px;" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw4af367c5/images/Spring2022/obc_atrestage_0_sp1_gpt.jpg?yocs=s_" alt="">
+               
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbb27e3a8/crop/026398803_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Whipped Berry Meringue</h3>
+               <p>Shower Gel</p>
+               <div id="six1">
+                
+                <h3 style="margin-top:10px;">$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.37</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw1605de44/crop/026297833_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">Online Exclusive</h5>
+                <h3>White Citrus</h3>
+               <p>Ultimate Hydration Body Cream</p>
+               <div id="six1">
+                
+                <h3>$15.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.87</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwceb9d2bf/crop/026398819_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Whipped Berry Meringue</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$4.12</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5d459078/crop/026398838_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">Online Exclusive</h5>
+                <h3>Coconut Cream Pie</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$4.12</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw94ced092/crop/026399715_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Bubbly Rosé</h3>
+               <p>Ultimate Hydration Body Cream</p>
+               <div id="six1">
+                
+                <h3>$15.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.87</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6064f1bf/crop/026480834_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Pink Chiffon</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbfd3511f/crop/026398840_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">Online Exclusive</h5>
+                <h3>Coconut Cream Pie</h3>
+               <p>Ultimate Hydration Body Cream</p>
+               <div id="six1">
+                
+                <h3>$15.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.87</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw54695a37/crop/026297853_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">Online Exclusive</h5>
+                <h3>Pink Chiffon</h3>
+               <p>Ultimate Hydration Body Cream</p>
+               <div id="six1">
+                
+                <h3>$15.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.87</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwfc0177f6/crop/026480804_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Sunset Glow</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwef59d3ea/crop/026393190_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Fresh Getaway</h3>
+               <p>Travel Size Ultimate Hydration Body</p>
+               <div id="six1">
+                
+                <h3>$7.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$1.88</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw5781a11d/crop/026398820_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Peach Prosecco Macaron</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$4.12</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw995ba80a/crop/026399711_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Bubbly Rosé</h3>
+               <p>Super Smooth Body Lotion</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.87</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf5a5d9e7/crop/026211655_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Freshwater</h3>
+               <p>3-in-1 Hair, Face & Body Wash</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb17d5895/crop/026480829_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>One in a Million</h3>
+               <p>Ultimate Hydration Body Cream</p>
+               <div id="six1">
+                
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.25</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8cc52d55/crop/026402500_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Bahamas Passionfruit & Banana Flower</h3>
+               <p>Shower Gel</p>
+               <div id="six1">
+                
+                <h3 style="margin-top: -2px;">$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3 style="margin-top: -2px;">$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img  style="height: auto; width: 100%; margin-left: 0px;"src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwfe47ffe4/images/Summer2022/xcat_love-always-wins_su1_gpt_v1.jpg?yocs=s_" alt="">
+               
+               
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2e8343ca/crop/026398834_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">Online Exclusive</h5>
+                <h3>Coconut Cream Pie</h3>
+               <p>Shower Gel</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.25</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb31027b2/crop/026281129_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Stone</h3>
+               <p>3-in-1 Hair, Face & Body Wash</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4c14c345/crop/026131622_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Eucalyptus Spearmint</h3>
+               <p>Body Wash and Foam Bath</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$6.75</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf51216f3/crop/026360571_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">Online Exclusive</h5>
+                <h3>Happy Vibes</h3>
+               <p>Shower Gel</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw2b01c514/crop/026393194_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Fresh Getaway</h3>
+               <p>Travel Size Shower Gel</p>
+               <div id="six1">
+                
+                <h3>$6.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$1.63</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw07a5ab22/crop/026398811_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Whipped Berry Meringue</h3>
+               <p>Super Smooth Body Lotion</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.37</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+            </div>
+            <div>
+               <img style="height: auto; width: 100%; margin: 200px 0px 0px 0px;" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwebae50f2/crop/026399294_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+               <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+               <h3>Freshwater</h3>
+              <p>Shea Butter Cleansing Bar</p>
+              <div id="six1">
+               
+               <h3>$8.50 <hr style="margin-top: -11px; width:100%"></h3>
+               <h3>$2.13</h3>
+              </div>
+             
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img style="width: 80%;" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4dcb175d/crop/026439814_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Bahamas Passionfruit & Banana Flower</h3>
+                <p>Shower Gel</p>
+                <div id="six1">
+                 
+                 <h3 style="margin-top: -2px;">$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                 <h3 style="margin-top: -2px;">$3.95</h3>
+                </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img style="height: auto; width: 100%; margin: 200px 0px 0px 0px;" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwebae50f2/crop/026399294_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+               <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+               <h3>At The Beach</h3>
+              <p>Shea Butter Cleansing Bar</p>
+              <div id="six1">
+               
+               <h3>$8.50 <hr style="margin-top: -11px; width:100%"></h3>
+               <h3>$2.13</h3>
+              </div>
+             
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8c5b8594/crop/026402537_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Pink Pineapple Sunrise</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwb2365986/crop/026398812_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Peach Prosecco Macaron</h3>
+               <p>Super Smooth Body Lotion</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.37</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdfdfc280/crop/026393192_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Fresh Getaway</h3>
+               <p>Travel Size Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$8.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$2.13</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw356929cc/crop/026300558_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Gingham Heart of Gold</h3>
+               <p>Super Smooth Body Lotion</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.37</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwee0d4d1c/crop/026480583_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Sunkissed</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbdb80a00/crop/026402517_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Waikiki Beach Coconut</h3>
+               <p>Fine Fragrance Mist</p>
+               <div id="six1">
+                
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw06a10bd4/crop/026042207_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Sunset Glow</h3>
+               <p>Sunset Glow</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw136a4eca/crop/026468798_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Sunset Glow</h3>
+               <p>Ultimate Hydration Body Cream</p>
+               <div id="six1">
+                
+                <h3>$16.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw76cb4597/crop/026244608_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">Online Exclusive</h5>
+                <h3>Pink Chiffon</h3>
+               <p>Fine Fragrance Mit</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw822a148a/crop/026402506_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Bahamas Passionfruit & Banana Flower</h3>
+                <p>Shower Gel</p>
+                <div id="six1">
+                 
+                 <h3 style="margin-top: -2px;">$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                 <h3 style="margin-top: -2px;">$3.95</h3>
+                </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img style="width: 80%;" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw4dcb175d/crop/026439814_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Bahamas Passionfruit & Banana Flower</h3>
+                <p>Shower Gel</p>
+                <div id="six1">
+                 
+                 <h3 style="margin-top: -2px;">$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                 <h3 style="margin-top: -2px;">$3.95</h3>
+                </div>
+              
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3a59218/crop/026474722_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Sea Island Shore</h3>
+               <p>Shower Gel</p>
+               <div id="six1">
+                
+                <h3>$13.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$3.95</h3>
+               </div>
+              
+               <button>ADD TO BAG</button>
+               </div>
+               <div>
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwbfd92673/crop/026131623_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_" alt="">
+                <h5 style="color:rgb(44, 74, 181); font-style: italic; text-align: center; margin-top: 5px;">New!</h5>
+                <h3>Eucalyptus Spearmint</h3>
+               <p>Body Cream</p>
+               <div id="six1">
+                
+                <h3>$15.50 <hr style="margin-top: -11px; width:100%"></h3>
+                <h3>$7.75</h3>
+               </div>
+              
+               <button>ADD TO BAG <a href="#"></a> </button>
+              
+             
+              </div>
+               </div>
+               <div id="seven">
+
+        
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>
+                 <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw2d6a89be/images/svg-icons/pagination-arrow.svg?yocs=o_s_" alt="">
+                </div>
+                <div>
+                 <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw2d6a89be/images/svg-icons/pagination-arrow.svg?yocs=o_s_" alt=""> 
+                 </div>
+                 <div>
+                 <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw2d6a89be/images/svg-icons/pagination-arrow.svg?yocs=o_s_" alt="">
+                 </div>
+                
+                 </div>
+                 <hr style="margin-top:20px">
+ 
+                 </div> 
+            </div>
+
+           
+       </div>
+        
+       
+</div>
+<hr style="margin-top: 60px; background-color:rgb(255, 255, 255);">
+<div id="ten">
+   <div class="tip">
+    <p>Get email offers & the latest news from Bath & Body Works!</p>
+    <p style="margin-bottom: 0px;">Enter Email</p>
+    <input style="height: 30px;" type="text">
+    <button  style="padding-left: 11px; font-size: 20px; border: 1px solid; margin-left:5px; color:black; background-color:rgb(231, 228, 228); width:30px; height:30px; border-radius:50%;">𝐢</button>
+    <p style="margin-bottom: 0px;">Confirm Email</p>
+    <input style="height: 30px;" type="text">
+    <button style=" background-color:black; color:white; height:35px;">SUBMIT</button>
+   </div>
+   <div>
+    <h5>CUSTOMER CARE</h5>
+    <p>Help & FAQs</p>
+    <p>Shipping</p>
+    <p>Returns & Exchanges</p>
+    <p>Order Tracking</p>
+    <p>Corporate Sales & Gifts</p>
+    <p>Contact Us</p>
+    
+   </div>
+   <div>
+    <h5>MY ACCOUNT</h5>
+    <p>Sign In or Sign Up</p>
+    <p>Order Tracking</p>
+    <p>My Auto Refresh</p>
+    <p>My Love-It List</p>
+   </div>
+   <div>
+    <h5>DISCOVER</h5>
+    <p>About Us</p>
+    <p>Careers</p>
+    <p>Gift Cards</p>
+    <p>Shop by Fragrance</p>
+    <p>Product Ingredients</p>
+    <p>Get Inspired</p>
+    <p>Diversity, Equity & Inclusion</p>
+   </div>
+   <div>
+    <h5>FIND US</h5>
+    <p>Store Locator</p>
+    <p>Global Locations</p>
+   </div>
+</div>
+<h4 style="margin-left: 42px; color:black">GET CONNECTED</h4>
+<div id="nine">
+    <div>
+        <a href="https://www.facebook.com/bathandbodyworks" class="fa fa-facebook"> </a>   
+        <a href="https://twitter.com/bathbodyworks" class="fa fa-twitter"> </a> 
+        <a href="https://www.instagram.com/bathandbodyworks/" class="fa fa-instagram"> </a> 
+        <a href="https://www.youtube.com/user/bathandbodyworks/" class="fa fa-youtube"> </a>  
+        <a href="https://www.pinterest.com/bathbodyworks/" class="fa fa-pinterest"> </a>
+    </div>
+
+  <div>
+    <img style="height:100px; width:400px" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0c8e6af7/images/evergreen/Happiness_Guaranteedtimes2_v2.jpg?yocs=o_s_" alt="">
+  </div>
+</div>
+</body>
+</html>
+<script>
+
+//     <a data-role="link" href="javascript:linkHandler('<%= obj.productname %>', '<%= obj.price %>')" class="get" >Add <a>
+
+
+
+// function linkHandler(name, price)
+// {
+//     alert(name);
+//     alert(price);
+//     var name = "Eucalyptus Spearmin";
+//     var price = price;
+//     var cartItem = new item(name, parseFloat(price));
+//             // check duplicate
+//             var match = ko.utils.arrayFirst(viewModel.cartItems(), function(item){ return item.name == name; });
+//             if(match){
+//                 match.qty(match.qty() + 1);
+//             } else {
+//               viewModel.cartItems.push(cartItem);
+// var rowCount = document.getElementById("cartcontent1").getElementsByTagName("TR").length;
+// document.getElementById("Totala").innerHTML = rowCount;
+//             }
+// }
+
+</script>
