@@ -1,6 +1,6 @@
 document.getElementById("createAccount").addEventListener("click", getUserData);
 let arr = [];
-async function getUserData() {
+ function getUserData() {
   let Fname = document.getElementById("signUpFName").value;
   let Lname = document.getElementById("signUpLName").value;
   let email = document.getElementById("signUpEmail").value;
