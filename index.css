@@ -145,30 +145,22 @@
     margin-right: 20px;
 
 }
-
 #body>img {
     width: 400px;
     margin: auto;
     margin-left: 220px;
-
 }
-
-
 #H-tree>div {
-
     height: 40px;
     display: flex;
     margin: auto;
     text-align: center;
 }
-
 #H-tree>div:nth-child(1) {
     width: auto;
     position: relative;
     left: 12rem;
 }
-
-
 #Deatils {
     width: 40px;
     height: 40px;
