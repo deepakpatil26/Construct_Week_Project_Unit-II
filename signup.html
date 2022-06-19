@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400&display=swap" rel="stylesheet">
-    <link rel="icon" href="https://logodix.com/logo/819894.jpg">
+  
     <link rel="stylesheet" href="./signup.css">
-    <link rel="stylesheet" href="/Footer/footer.css">
-    <link rel="stylesheet" href="/Navbar/nav.css">
+
     <title>My Account | Bath & Body Works</title>
 </head>
 <body>
@@ -28,47 +24,47 @@
                 
                 <div class="signupInputBox_1">
                     <label>First Name</label><br>
-                    <input type="text" id="signUpFName">
+                    <input type="text" id="signUpFName" required>
                 </div>
 
                 <div class="signupInputBox_1">
                     <label>Last Name</label><br>
-                    <input type="text" id="signUpLName">
+                    <input type="text" id="signUpLName" required>
                 </div>
 
                 <div class="signupInputBox_1">
                     <label>Email</label><br>
-                    <input type="text" id="signUpEmail">
+                    <input type="email" id="signUpEmail" required>
                 </div>
 
                 <div class="signupInputBox_1">
                     <label>Street Address</label><br>
-                    <input type="text" id="signUpStreet">
+                    <input type="text" id="signUpStreet" required>
                 </div>
                 
                 <div class="signupInputBox_1">
                     <label>City</label><br>
-                    <input type="text" id="signUpCity">
+                    <input type="text" id="signUpCity" required>
                 </div>
                 
                 <div class="signupInputBox_1">
                     <label>State</label><br>
-                    <input type="text" id="signUpState">
+                    <input type="text" id="signUpState" required>
                 </div>
 
                 <div class="signupInputBox_1">
                     <label>ZIP/Postal Code</label><br>
-                    <input type="text" id="signUpZipcode">
+                    <input type="text" id="signUpZipcode" required>
                 </div>
 
                 <div class="signupInputBox_1">
                     <label>Phone</label><br>
-                    <input type="text" id="signUpPhone">
+                    <input type="text" id="signUpPhone" required>
                 </div>
                 
                 <div class="signupInputBox_1">
                     <label>Password</label><br>
-                    <input type="text" id="signUpPassword">
+                    <input type="password" id="signUpPassword" required>
                 </div>
 
                 <div class="signupInputBox_1">
@@ -85,14 +81,7 @@
        
     </div>
     <script src="signup.js"></script>
-   <script  src="/Footer/footer.js"></script>
-   <script src="/Navbar/nav.js"></script>
-   <script>
-    let account_drop_btn = document.getElementById('myAccount');
-    let dropAccount = document.getElementById('account');
-    account_drop_btn.addEventListener('click',()=>{
-            dropAccount.classList.toggle('open_account')
-        })
-</script>
+
+  
 </body>
 </html>
