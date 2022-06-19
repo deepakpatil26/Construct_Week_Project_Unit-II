@@ -74,19 +74,27 @@ function myFunction1() {
       }
     }
     
-    let btn=document.querySelector("#main-box>div>div>button");
+    let btn=document.querySelector("#but");
     btn.addEventListener("click", myfunc);
-    let arr=[];
+    let arr=JSON.parse(localStorage.getItem("details")) || [];
     function myfunc(event) {
         event.preventDefault();
-        let obj={};
-        obj.imag=document.querySelector("#main-box>div>div>img");
-        obj.text1=document.querySelector("#main-box>div>div>img+p");
-        obj.text2=document.querySelector("#main-box>div>div>h2");
-        obj.text2=document.querySelector("#main-box>div>div>h2+p");
-        obj.price=document.querySelector("#main-box>div>div>h2");
+
+
+        let image = document.querySelector("#main-box>div>div>img").src
+        let text1 = document.querySelector("#main-box>div>div>img+p+h2").innerText
+        let text3 = document.querySelector("#main-box>div>div>img+p+h2+p+h2").innerText    
+
+        let obj = {
+          "image":image,
+          "text1":text1,
+          "text3":text3        
+        }
+
+        console.log(obj)
         arr.push(obj);
-        console.log(arr);
+        localStorage.setItem("details",JSON.stringify(arr));
+
+        console.log("arr")
+      }  
     
-        localStorage.setItem("details", JSON.stringify(arr));
-    }
