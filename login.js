@@ -10,7 +10,7 @@ function startLogin() {
       // console.log(data[i].email)
       if (email === data[i].email && password === data[i].password) {
         alert("Login success");
-        window.location.href = "../index.html";
+        window.location.href = "index.html";
       } else {
         alert("Invalid credentials");
       }
