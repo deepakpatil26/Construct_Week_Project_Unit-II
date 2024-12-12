@@ -1,99 +1,99 @@
-body{
-    margin: 0%;
-    font-family: 'Gothic A1', sans-serif;
+/* General Reset and Styling */
+body {
+  margin: 0;
+  font-family: "Gothic A1", sans-serif;
+  background-color: #f9f9f9;
 }
 
-.img{
-    width: 100%;
-    height: 100%;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.locationLogin{
-    width: 15%;
-    font-size: 13px;
-    margin-left: 2%;
-    margin-top: 6%;
-    /* border: 1px solid; */
+nav {
+  padding: 10px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
 }
 
-.locationLogin>a{
-    color: black;
+nav a:hover {
+  text-decoration: underline;
 }
 
-.inputContainer{
-    width: 80%;
-    height: auto;
-    margin: auto;
-    margin-top: 2%;
-    /* border: 1px solid; */
-    margin-bottom: 5%;
+.main-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 15px;
 }
 
-.topPoster{
-    width: 100%;
-    height: 120px;
-    /* border-bottom: 1px solid; */
+.input-container {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.topHeading{
-    width: 100%;
-    height: 80px;
-    border-top: 1px solid white;
-    border-bottom: 2px solid;
-    /* margin-top: 1%; */
+.banner-img {
+  max-width: 100%;
+  border-radius: 8px;
 }
 
-.topHeading>h2{
-    /* border: 1px solid; */
-    margin-top: 3%;
+h2 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #333;
 }
 
-.signupInputBox{
-    width: 60%;
-    height: 100%;
-    /* border: 1px solid yellow; */
-    margin-left: 25%;
+.input-box {
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.signupInputBox_1, .signupInputBox_2{
-    width: 80%;
-    height: auto;
-    /* border: 1px solid; */
-    margin: auto;
-    font-size: 15px;
-    margin-top: 2%;
+.input-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
 }
 
-.signupInputBox_1>input{
-    width: 70%;
-    height: 25px;
-    margin-top: 4%;
-    margin-bottom: 3%;
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
 }
 
-#createAccount{
-    padding: 10px;
-    width: 40%;
-    margin-left: 17.5%;
-    cursor: pointer;
-    background-color: black;
-    color: white;
-    border: 1px solid;
-    margin-bottom: 5%;
+.input-box input:focus {
+  border-color: #007bff;
+  outline: none;
 }
 
-#createAccount:hover{
-    background-color: rgb(207, 207, 207);
-    border: 1px solid rgb(207, 207, 207);
-    color: black;
+.submit-btn {
+  padding: 12px 20px;
+  width: 100%;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-.signupInputBox_2>p{
-    text-align: center;
-    font-size: 12px;
-    line-height: 18px;
+.submit-btn:hover {
+  background-color: #555;
 }
 
-.signupInputBox_2{
-    margin-left: 2%;
+.help-section {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.help-section p {
+  margin: 0;
 }

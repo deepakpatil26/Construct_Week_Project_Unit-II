@@ -1,0 +1,70 @@
+/* Common Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-center {
+  text-align: center;
+}
+.center {
+  align-items: center;
+  justify-content: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+#top-bar {
+  background-color: #f3f3f3;
+  padding: 10px;
+}
+.store-info {
+  color: #2c4ab5;
+}
+.underline-link {
+  text-decoration: underline;
+}
+#header {
+  background-color: #ededed;
+  padding: 20px;
+}
+#navbar {
+  background-color: #fff;
+  padding: 10px;
+}
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: gray;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.product-item img {
+  width: 100%;
+}
+.price .original-price {
+  text-decoration: line-through;
+  margin-right: 10px;
+  color: gray;
+}
+.price .discount-price {
+  color: red;
+}

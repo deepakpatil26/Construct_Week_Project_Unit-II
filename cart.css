@@ -1,0 +1,200 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Milonga&display=swap");
+
+/* General Reset */
+* {
+  font-family: "Gill Sans", Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+#Header-div {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.announcement {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f2f2f2;
+}
+
+.announcement span {
+  font-weight: bold;
+}
+
+#H-tree {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background: #f9f9f9;
+}
+
+#account-cart a {
+  display: inline-block;
+}
+
+#H-Four {
+  display: flex;
+  justify-content: space-around;
+  background: #f8f8f8;
+  padding: 10px;
+  align-items: center;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+h2#head {
+  background-color: #9c3c61;
+  color: aliceblue;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#cartitem {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+#cartitem > div {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#Total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+#coupansection {
+  padding: 10px;
+  text-align: center;
+}
+
+#place {
+  margin-top: 20px;
+  padding: 15px;
+  font-weight: bold;
+  background: #e91e63;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#place:hover {
+  background: #d81b60;
+}
+
+/* Buttons */
+button {
+  padding: 10px;
+  border: none;
+  background: #ffeb3d;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #ffc107;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f1f1f1;
+  color: #555;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  #H-tree {
+    flex-direction: column;
+  }
+
+  #search {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #cartitem {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  #Total {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #place {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .announcement span {
+    font-size: 14px;
+  }
+
+  #H-Four {
+    flex-direction: column;
+  }
+
+  #cartitem {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    font-weight: bold;
+    padding: 15px;
+  }
+}

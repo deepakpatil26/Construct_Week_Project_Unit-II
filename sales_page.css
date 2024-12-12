@@ -1,0 +1,198 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header and Top Sections */
+.tophead {
+  background-color: #4d88bd;
+}
+
+#tophead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  color: #105999;
+  border: 1px solid black;
+  height: 50px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#tophead h2 {
+  margin-left: 20px;
+  margin-right: 40px;
+}
+
+#head2 {
+  display: flex;
+  background-color: #f2f2f2;
+  height: 50px;
+}
+
+#tag {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#tag > img {
+  height: auto;
+  width: auto;
+}
+
+/* Navigation Bar */
+.topnav {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.topnav input[type="text"] {
+  padding: 3px;
+  border: 1px solid black;
+  margin-top: 6px;
+  font-size: 15px;
+  width: 250px;
+}
+
+/* Sale Section */
+#sale {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#sale > div {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+  margin-right: -200px;
+}
+
+#sale > div > p {
+  padding: 10px;
+  background-color: rgb(235, 225, 225);
+  border-radius: 50px;
+}
+
+/* Dropdown Buttons */
+.dropbtn1,
+.dropbtn2,
+.dropbtn3,
+.dropbtn4,
+.dropbtn5,
+.dropbtn6,
+.dropbtn7 {
+  background-color: transparent;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn1:hover,
+.dropbtn2:hover,
+.dropbtn3:hover,
+.dropbtn4:hover,
+.dropbtn5:hover,
+.dropbtn6:hover,
+.dropbtn7:hover,
+.dropbtn1:focus,
+.dropbtn2:focus,
+.dropbtn3:focus,
+.dropbtn4:focus,
+.dropbtn5:focus,
+.dropbtn6:focus,
+.dropbtn7:focus {
+  background-color: grey;
+  color: white;
+}
+
+/* Search Input Fields */
+[id^="myInput"] {
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+[id^="myInput"]:focus {
+  outline: 3px solid #ddd;
+}
+
+/* Main Boxes */
+[class^="main-box"] {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 500px);
+  gap: 20px;
+  padding: 40px;
+  border: 1px solid transparent;
+}
+
+.main-box1 > div > img,
+.main-box2 > div > img,
+.main-box3 > div > img,
+.main-box4 > div > img,
+.main-box5 > div > img,
+.main-box6 > div > img,
+.main-box7 > div > img {
+  width: 220px;
+  height: 220px;
+}
+
+.main-box1 > div > p,
+.main-box2 > div > p,
+.main-box3 > div > p,
+.main-box4 > div > p,
+.main-box5 > div > p,
+.main-box6 > div > p,
+.main-box7 > div > p {
+  color: blue;
+  font-style: italic;
+}
+
+.main-box1 > div > h2,
+.main-box2 > div > h2,
+.main-box3 > div > h2,
+.main-box4 > div > h2,
+.main-box5 > div > h2,
+.main-box6 > div > h2,
+.main-box7 > div > h2 {
+  font-family: "Gill Sans", Arial, sans-serif;
+  color: black;
+}
+
+.main-box1 > div > h1,
+.main-box2 > div > h1,
+.main-box3 > div > h1,
+.main-box4 > div > h1,
+.main-box5 > div > h1,
+.main-box6 > div > h1,
+.main-box7 > div > h1 {
+  color: red;
+}
+
+.main-box1 > div > button,
+.main-box2 > div > button,
+.main-box3 > div > button,
+.main-box4 > div > button,
+.main-box5 > div > button,
+.main-box6 > div > button,
+.main-box7 > div > button {
+  color: white;
+  background-color: black;
+  padding: 7px;
+  width: 100%;
+  cursor: pointer;
+}

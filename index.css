@@ -1,560 +1,150 @@
+/* Global Reset */
 * {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", Calibri, sans-serif;
+  box-sizing: border-box;
 }
 
-#content {
-
-    border: 1px solid transparent;
-}
-
-#Header-div {
-
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    margin-top: -8px;
-    right: 0;
-    left: 0;
-
-}
-
-
+/* Header Section */
 #H-one {
-    width: 100%;
-    height: 32px;
-    border: 1px solid transparent;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsYLZ3yNXAlsTbGVDIoeWiRinr4GqeCS3vABXFl-IdHSGDtNGKhYQ2yYsXFR-VcgFzjHI&usqp=CAU");
+  width: 100%;
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsYLZ3yNXAlsTbGVDIoeWiRinr4GqeCS3vABXFl-IdHSGDtNGKhYQ2yYsXFR-VcgFzjHI&usqp=CAU")
+    no-repeat;
+  background-size: cover;
+  height: 32px;
 }
-
-#H-one>.one-one {
-    width: 630px;
-    height: 100%;
-    border: 1px solid rgb(194, 192, 192);
-    margin: auto;
-    background-color: white;
-    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    align-items: center;
-
-}
-
-.one-one>span:nth-child(1) {
-    color: #005699;
-    font-size: 14px;
-    font-weight: 600;
-    text-align: start;
-}
-
-.one-one>span:nth-child(2) {
-    font-size: 22px;
-    font-weight: 600;
-    color: #005699;
-    text-align: center;
-}
-
-.one-one>span:nth-child(3) {
-    font-size: 14px;
-    font-weight: 600;
-    color: #005699;
-    text-align: right;
-}
-
-.one-one>span:nth-child(4) {
-    font-size: 12px;
-    font-weight: 400;
-    color: #005699;
-    text-align: end;
-    text-decoration: underline;
-}
-
-/* header ke second line */
 
 #H-two {
-    width: 100%;
-    height: 28px;
-    border: 1px solid transparent;
-    background-color: #F2F2F2;
-    font-family: Arial, sans-serif;
-    text-align: right;
-    align-items: center;
-
-
-
+  width: 100%;
+  background-color: #f2f2f2;
+  text-align: right;
+  padding: 5px;
 }
-
-#search {
-    display: flex;
-    border: 1px solid gray;
-    padding: 5px;
-    background-color: white;
-    justify-content: center;
-    align-content: center;
-    width: 250px;
-
-
-}
-
-
-
-#two-one>span {
-    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
-    color: #005699;
-    line-height: 16px;
-    font-size: 17px;
-    font-weight: 400;
-    margin-left: 10px;
-
-}
-
-#two-one>img {
-    justify-content: center;
-    align-items: center;
-    padding: 0 3px 0 0;
-    margin-top: 10px;
-    height: 20px;
-
-
-}
-
-#two-one>span+span {
-    color: #333333;
-    line-height: 16px;
-    font-size: 14px;
-    font-weight: 400;
-    text-decoration: underline;
-    align-items: center;
-    margin-right: 90px;
-}
-
-/* header 3rd line */
 
 #H-tree {
-    width: 100%;
-    height: 60px;
-    border: 1px solid transparent;
-    background-color: #FFFFFF;
-    display: flex;
-    text-align: center;
-    /* justify-content: space-around; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
 }
 
-#body {
-    margin-right: 20px;
-
-}
-#body>img {
-    width: 400px;
-    margin: auto;
-    margin-left: 220px;
-}
-#H-tree>div {
-    height: 40px;
-    display: flex;
-    margin: auto;
-    text-align: center;
-}
-#H-tree>div:nth-child(1) {
-    width: auto;
-    position: relative;
-    left: 12rem;
-}
-#Deatils {
-    width: 40px;
-    height: 40px;
-    border: 1px solid transparent;
-    margin: auto;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    margin-top: 0%;
+#H-tree div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#Deatils>img {
-    width: 75%;
+/* Search Bar */
+#search {
+  display: flex;
+  border: 1px solid gray;
+  padding: 5px;
+  background-color: #fff;
 }
 
-#cart {
-    width: 40px;
-    height: 40px;
-    border: 1px solid transparent;
-    margin-left: 30px;
-
+/* Navigation Icons */
+#H-tree a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
 }
 
-#cart>img {
-    width: 80%;
-
-
+#H-tree img {
+  width: 30px;
 }
 
-/* ************* */
-
-#H-Four {
-    display: flex;
-    right: 0;
-    height: 28px;
-    border: 1px solid transparent;
-    justify-content: space-evenly;
-    background-color: whitesmoke;
-    align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
+/* Main Content */
+#content {
+  border: 1px solid transparent;
 }
 
-#H-Four~div {
-    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
-    size: 14px;
-    padding: 13px 12px 8px;
+#ending {
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  height: 40px;
 }
 
-/* ## header is closed ### */
-
-#ending{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    width: 80%;
-    text-align: center;
-    justify-content: center;
-    background-color: red;
-    color: whitesmoke;
-    height: 40px;
-    font-size: 30px;
-    font-weight: bolder;
-    top: 0;
-}
-
-.duck {}
-
-.duck>img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
-    width: 80%;
-}
-
-.duck>p {
-    text-align: center;
-    margin: auto;
-    text-decoration: underline;
-    font-weight: bold;
-    color: #464444;
-    margin-top: 10px;
-}
-
-#Slide-div>img{
-    margin: auto;
-    width: 101%;
-    margin-top: 20px;
-}
-
-/* till here sliding div */
-/* _________________________ */
-
-/* <!-- offers img --> */
-
-#Sale-img-div {
-    display: grid;
-    width: 80%;
-    border: 1px solid transparent;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 32px 32px;
-    margin: auto;
-    margin-top: 80px;
-    margin-bottom: 80px;
-}
-
-/* offer img closing here */
-
+/* Category Section */
 .Category-div {
-
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border: 1px solid transparent;
-    height: 330px;
-
-}
-
-.Category-div>h1 {
-    margin: auto;
-    margin-left: 550px;
-    margin-bottom: 10px;
-    /* text-align: center; */
+  text-align: center;
+  padding: 20px;
 }
 
 .mini-cat {
-
-    width: 90%;
-    border: 1px solid transparent;
-    height: 200px;
-    margin: auto;
-    margin-top: 40px;
-    display: flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  padding: 10px;
 }
 
-.mini-cat>div {
-    border-radius: 5px;
-    align-content: space-around;
-    border: 1px solid transparent;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+.mini-cat div {
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
-.mini-cat>div>p {
-    text-decoration: underline;
+.mini-cat div:hover {
+  background-color: #f9f9f9;
 }
 
-
-
-.mini-cat>div>img {
-    margin: auto;
-    width: 80%;
-    border-radius: 5px 5px 0px 0px;
+.mini-cat img {
+  width: 100%;
+  border-radius: 5px;
 }
 
-/* <!-- Category-div closed here  && mini cat --> */
-
-#welcome {
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    border: 1px solid transparent;
-    height: 180px;
+/* Blog and Footer */
+#blog {
+  padding: 20px;
+  text-align: center;
 }
 
-#welcome>h1 {
-    margin: auto;
-    margin-left: 600px;
-    font-size: 24px;
-    font-weight: bolder;
-    color: rgb(43, 42, 42);
-    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
-    ;
-
-
+#footer {
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
 }
 
-#welcome>P {
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    margin-top: 30px;
-    line-height: 5px;
-    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
-    font-weight: 50;
-}
-
-#welcome>div {
-    border: 1px solid transparent;
-    width: 200px;
-    height: 20px;
-    margin: auto;
-    margin-top: 25px;
-    text-align: center;
-    padding: 10px;
-    background-color: #E5E5E5;
-    font-weight: bold;
-    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
-
-}
-
-#welcome>div:hover {
-    /* background-color: black; */
-    color: whitesmoke
-}
-
-
-/* <!-- welcome-div closed here --> */
-
-
-
-#Add>img{
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    /* margin-left: 20px; */
-}
-
-
-
-
-
-/* Add div closed here */
-
-#Give-love>img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-top: 5px;
-    width: 80%;
-}
-
-#gifts {
-
-
-    width: 80%;
-    margin: auto;
-    height: 40px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 70px;
-}
-
-#gifts>button {
-
-    padding: 10px 30px;
-    background-color: #333333;
-    color: whitesmoke;
-
-
-}
-
-#gifts>button:hover {
-    background-color: rgb(219, 218, 218);
-    color: black;
-    border: none;
-}
-
-/* <!- bueatyfull images  -> */
-
-#blog{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-top: 5px;
-    width: 86%;
-    border: 1px solid transparent;
-    padding: 20px;
-}
-#blog>img{
-    width: 100%;
-    margin-right:- 10px;
-    
-}
-#footer{
-    width: 100%;
-}
-#footer>div{
-    background-color: white;
-    size: 500px;
-}
-#footer>div+div{
-    background-color: grey;
-    size: 500px;
-}
-#footer>img{
-    width: 100%;
-}
-
-
-
-/* The container <div> - needed to position the dropdown content */
+/* Dropdown Menu */
 .dropdown {
-    position: relative;
-    display: inline-block;
-    margin-right: 10px;
-    /* border: 1px solid red;; */
-   
-    
-    }
-    
-    
-    /* Dropdown Button */
-    .dropbtn {
-    background-color: transparent;
-    color: gray;
-    padding: 5px;
-    font-size: 16px;
-    border: none;
-
-    }
-    
-    /* Dropdown Content (Hidden by Default) */
-    #dropdown-content {
-      display: none;
-   
-
-      background-color: white;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-   
-      padding: 30px 0px;
-      padding-left: 100px;
-      padding-right: 50px;
-      
-      }
-    
-    /* Links inside the dropdown */
-    #dropdown-content a {
-    color: gray;
-    padding: 4px;
-    text-decoration: none;
-    width: 250px;
-    /* border: 1px solid red; */
-
-    /* display: block; */
-    }
-    
-    /* Change color of dropdown links on hover */
-    #dropdown-content a:hover {
-    background-color:transparent;
-    color:rgb(231, 43, 43);
-
-    
-    
-    }    
-  
-    /* Show the dropdown menu on hover */
-    .dropdown:hover>#dropdown-content {
-    width: 1500px;
-    display: grid;
-    grid-template-columns: repeat(2,550px);
-    grid-template-rows: repeat(7,40px);
-    /* border: 1px solid black; */
-    position:absolute;
-    left:-100px;
-    }
-
-    
-    #dropdown-content{
-        position:absolute;
-       
-        
-   
-             
-    
-      
-   }
-
-   #MEHER_LOVE_U_3000{
-    height: 100%; width: 100%;
-    border: none;  
-    border-color: grey;
-   }
-
-   input[type="search"]:hover {
-    border: none; border: 0px solid;
-    border-color: red;
+  position: relative;
+  display: inline-block;
 }
 
+.dropbtn {
+  background-color: transparent;
+  color: gray;
+  padding: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
 
-    
-    
-    /* Change the background color of the dropdown button when the dropdown content is shown */
-    .dropbtn:hover {color:rgb(216, 32, 63);
-            cursor: pointer;
-           
-            font-weight: bold;
-            border-bottom: 3px solid rgb(231, 43, 43);
-            
-    }
+#dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  min-width: 200px;
+}
+
+#dropdown-content a {
+  display: block;
+  padding: 5px;
+  color: gray;
+  text-decoration: none;
+}
+
+#dropdown-content a:hover {
+  background-color: #f4f4f4;
+  color: #e32b3f;
+}
+
+.dropdown:hover #dropdown-content {
+  display: block;
+}
