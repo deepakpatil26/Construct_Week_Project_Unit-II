@@ -2,8 +2,9 @@
 let total = 0;
 let disc = 0;
 
-// COUPAN APPLY
-const coupans = document.querySelector("#coupans").innerText;
+// COUPON APPLY
+const couponElement = document.querySelector("#coupans");
+const coupon = couponElement ? couponElement.innerText : "";
 
 // Load Cart from Local Storage
 let loadcart = JSON.parse(localStorage.getItem("cart-page")) || [];
@@ -14,7 +15,7 @@ let sum = 0;
 document.querySelector("#promobtn").addEventListener("click", applyCoupon);
 
 function applyCoupon() {
-  if (coupans === "masai30") {
+  if (coupon.toLowerCase() === "masai30") {
     const discountAmount = total * 0.5; // 50% discount
     disc = total - discountAmount;
     alert("Congrats! You got a 50% discount.");
@@ -29,7 +30,6 @@ function applyCoupon() {
 function renderCart() {
   const cartItemContainer = document.querySelector("#cartitem");
   cartItemContainer.innerHTML = ""; // Clear existing cart items
-  const fragment = document.createDocumentFragment();
 
   loadcart.forEach((el, index) => {
     quantity += el.counter;
@@ -37,10 +37,10 @@ function renderCart() {
 
     const div = document.createElement("div");
     const div2 = document.createElement("div");
-    div2.setAttribute("class", "card");
+    div2.classList.add("card");
 
     const imga = document.createElement("img");
-    imga.setAttribute("src", el.image_url);
+    imga.src = el.image_url;
 
     const nam = document.createElement("h3");
     nam.innerText = el.name;
@@ -59,10 +59,9 @@ function renderCart() {
     div2.append(nam, price, Quantity, remove);
     div.append(imga, div2);
 
-    fragment.appendChild(div);
+    cartItemContainer.appendChild(div);
   });
 
-  cartItemContainer.appendChild(fragment);
   document.querySelector("#quantity").innerText = quantity;
   total = sum;
   updateTotalPrice();

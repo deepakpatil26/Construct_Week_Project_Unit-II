@@ -1,106 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-    <link rel="stylesheet" href="./styles/sales_page.css" />
-  </head>
-  <body>
-    <!-- Top Head -->
-    <div class="tophead">
-      <p>Today Only!</p>
-      <h2>FREE SHIPPING ON $50 ORDERS</h2>
-      <p>Code: TREASURE</p>
-      <p>Details</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="./styles/sales_page.css" />
+</head>
+
+<body>
+  <!-- Top Head -->
+  <div class="tophead">
+    <p>Today Only!</p>
+    <h2>FREE SHIPPING ON $50 ORDERS</h2>
+    <p>Code: TREASURE</p>
+    <p>Details</p>
+  </div>
+
+  <!-- Store Pickup -->
+  <section id="head2">
+    <h3>PICK UP IN STORE</h3>
+    <a class="set-store"
+      href="https://www.bathandbodyworks.com/on/demandware.store/Sites-BathAndBodyWorks-Site/en_US/Stores-BopisStoreFinder"
+      target="_blank">Set Store</a>
+  </section>
+
+  <!-- Navigation Menu -->
+  <nav class="menu">
+    <ul>
+      <li><a href="#">ALL SALE</a></li>
+      <li>
+        <a href="#">BODY CARE</a>
+        <div class="submenu">
+          <a href="#">BATH & SHOWER</a>
+          <a href="#">MOISTURIZER</a>
+          <a href="#">FRAGRANCE</a>
+          <a href="#">FEATURED</a>
+          <a href="#">EXPLORE BODY CARE</a>
+        </div>
+      </li>
+      <li>
+        <a href="#">CANDLES</a>
+        <div class="submenu">
+          <a href="#">ALL CANDLES</a>
+          <a href="#">FEATURED</a>
+          <a href="#">EXPLORE CANDLES</a>
+        </div>
+      </li>
+      <li>
+        <a href="#">HOME FRAGRANCE</a>
+        <div class="submenu">
+          <a href="#">ALL FRESHNERS</a>
+          <a href="#">FEATURED</a>
+          <a href="#">EXPLORE HOME FRAGRANCE</a>
+        </div>
+      </li>
+      <li><a href="#">HAND SOAPS & SANITIZERS</a></li>
+      <li><a href="#">MEN'S</a></li>
+      <li><a href="#">GIFTS</a></li>
+      <li><a href="#">BEST SELLERS</a></li>
+    </ul>
+  </nav>
+
+  <hr />
+
+  <!-- Sale Section -->
+  <section id="sale">
+    <h2>All Sale</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://example.com/product1.jpg" alt="product" />
+        <h2>Toasted Pineapple Marshmallow</h2>
+        <p>3-Wick Candle</p>
+        <span>$12.25</span>
+        <button>Add to Bag</button>
+      </div>
+      <div class="product">
+        <img src="https://example.com/product2.jpg" alt="product" />
+        <h2>Bahamas Passionfruit & Banana Flower</h2>
+        <p>Body Cream</p>
+        <span>$4.95</span>
+        <button>Add to Bag</button>
+      </div>
     </div>
+  </section>
 
-    <!-- Store Pickup -->
-    <section id="head2">
-      <h3>PICK UP IN STORE</h3>
-      <a
-        class="set-store"
-        href="https://www.bathandbodyworks.com/on/demandware.store/Sites-BathAndBodyWorks-Site/en_US/Stores-BopisStoreFinder"
-        target="_blank"
-        >Set Store</a
-      >
-    </section>
+  <!-- Search Dropdown -->
+  <section class="dropdown">
+    <button onclick="toggleDropdown('myDropdown1')">PRODUCT TYPE</button>
+    <div id="myDropdown1" class="dropdown-content">
+      <input type="text" placeholder="Search.." onkeyup="filterDropdown('myDropdown1')" />
+      <a href="#">3-Wick Candles</a>
+      <a href="#">Bar Soap</a>
+      <a href="#">Bath Soak</a>
+      <a href="#">Body Butter</a>
+    </div>
+  </section>
+  <script src="./scripts/sales_page.js"></script>
+</body>
 
-    <!-- Navigation Menu -->
-    <nav class="menu">
-      <ul>
-        <li><a href="#">ALL SALE</a></li>
-        <li>
-          <a href="#">BODY CARE</a>
-          <div class="submenu">
-            <a href="#">BATH & SHOWER</a>
-            <a href="#">MOISTURIZER</a>
-            <a href="#">FRAGRANCE</a>
-            <a href="#">FEATURED</a>
-            <a href="#">EXPLORE BODY CARE</a>
-          </div>
-        </li>
-        <li>
-          <a href="#">CANDLES</a>
-          <div class="submenu">
-            <a href="#">ALL CANDLES</a>
-            <a href="#">FEATURED</a>
-            <a href="#">EXPLORE CANDLES</a>
-          </div>
-        </li>
-        <li>
-          <a href="#">HOME FRAGRANCE</a>
-          <div class="submenu">
-            <a href="#">ALL FRESHNERS</a>
-            <a href="#">FEATURED</a>
-            <a href="#">EXPLORE HOME FRAGRANCE</a>
-          </div>
-        </li>
-        <li><a href="#">HAND SOAPS & SANITIZERS</a></li>
-        <li><a href="#">MEN'S</a></li>
-        <li><a href="#">GIFTS</a></li>
-        <li><a href="#">BEST SELLERS</a></li>
-      </ul>
-    </nav>
-
-    <hr />
-
-    <!-- Sale Section -->
-    <section id="sale">
-      <h2>All Sale</h2>
-      <div class="products">
-        <div class="product">
-          <img src="https://example.com/product1.jpg" alt="product" />
-          <h2>Toasted Pineapple Marshmallow</h2>
-          <p>3-Wick Candle</p>
-          <span>$12.25</span>
-          <button>Add to Bag</button>
-        </div>
-        <div class="product">
-          <img src="https://example.com/product2.jpg" alt="product" />
-          <h2>Bahamas Passionfruit & Banana Flower</h2>
-          <p>Body Cream</p>
-          <span>$4.95</span>
-          <button>Add to Bag</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Search Dropdown -->
-    <section class="dropdown">
-      <button onclick="toggleDropdown('myDropdown1')">PRODUCT TYPE</button>
-      <div id="myDropdown1" class="dropdown-content">
-        <input
-          type="text"
-          placeholder="Search.."
-          onkeyup="filterDropdown('myDropdown1')"
-        />
-        <a href="#">3-Wick Candles</a>
-        <a href="#">Bar Soap</a>
-        <a href="#">Bath Soak</a>
-        <a href="#">Body Butter</a>
-      </div>
-    </section>
-  </body>
 </html>
-<script src="./scripts/sales_page.js"></script>

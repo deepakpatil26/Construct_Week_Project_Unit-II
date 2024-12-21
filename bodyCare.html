@@ -1,110 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="./styles/bodyCare.css" />
-    <title>Body Care</title>
-  </head>
-  <body>
-    <!-- Top Bar -->
-    <div id="top-bar" class="flex-row center">
-      <div class="store-info">
-        <img src="" alt="Store Pickup Icon" />
-        PICK UP IN STORE
-      </div>
-      <div>
-        <a href="#" class="underline-link">Set Store</a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./styles/bodyCare.css" />
+  <title>Body Care</title>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div id="top-bar" class="flex-row center">
+    <div class="store-info">
+      <img src="https://example.com/store-pickup-icon.svg" alt="Store Pickup Icon" />
+      PICK UP IN STORE
+    </div>
+    <div>
+      <a href="#" class="underline-link">Set Store</a>
+    </div>
+  </div>
+
+  <!-- Header Section -->
+  <header id="header">
+    <div id="logo-search-bar" class="flex-row space-between">
+      <img src="https://example.com/logo.svg" alt="Bath and Body Works Logo" />
+      <div class="search-container flex-row">
+        <input type="text" placeholder="Search by fragrance..." />
+        <img src="https://example.com/account-icon.svg" alt="Account" />
+        <img src="https://example.com/cart-icon.svg" alt="Cart" />
       </div>
     </div>
-
-    <!-- Header Section -->
-    <header id="header">
-      <div id="logo-search-bar" class="flex-row space-between">
-        <img
-          src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwa9385fe9/images/svg-icons/Logos-main.svg"
-          alt="Bath and Body Works Logo"
-        />
-        <div class="search-container flex-row">
-          <input type="text" placeholder="Search by fragrance..." />
-          <img
-            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw3e39cc25/images/svg-icons/UI-MyAccount.svg"
-            alt="Account"
-          />
-          <img
-            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw2d6a89be/images/svg-icons/UI-AddToBag.svg"
-            alt="Cart"
-          />
+    <!-- Navbar -->
+    <nav id="navbar" class="flex-row">
+      <div class="dropdown">
+        <button class="dropbtn">ALL SALE</button>
+        <div class="dropdown-content">
+          <a href="#">SHOP BY CATEGORY</a>
+          <a href="#">EXPLORE ALL SALE</a>
+          <a href="#">ALL SALE OFFERS</a>
         </div>
       </div>
-      <!-- Navbar -->
-      <nav id="navbar" class="flex-row">
-        <div class="dropdown">
-          <button class="dropbtn">ALL SALE</button>
-          <div class="dropdown-content">
-            <a href="#">SHOP BY CATEGORY</a>
-            <a href="#">EXPLORE ALL SALE</a>
-            <a href="#">ALL SALE OFFERS</a>
-          </div>
+      <div class="dropdown">
+        <button class="dropbtn">BODY CARE</button>
+        <div class="dropdown-content">
+          <a href="https://www.bathandbodyworks.com/c/body-care/all-bath-shower">BATH & SHOWER</a>
+          <a href="https://www.bathandbodyworks.com/c/body-care/all-moisturizers">MOISTURIZERS</a>
+          <a href="https://www.bathandbodyworks.com/c/body-care/all-fragrance">FRAGRANCE</a>
+          <a href="#">AROMATHERAPY</a>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn">BODY CARE</button>
-          <div class="dropdown-content">
-            <a
-              href="https://www.bathandbodyworks.com/c/body-care/all-bath-shower"
-              >BATH & SHOWER</a
-            >
-            <a
-              href="https://www.bathandbodyworks.com/c/body-care/all-moisturizers"
-              >MOISTURIZERS</a
-            >
-            <a href="https://www.bathandbodyworks.com/c/body-care/all-fragrance"
-              >FRAGRANCE</a
-            >
-            <a href="#">AROMATHERAPY</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section id="offers" class="text-center">
+      <h5>TOP OFFERS</h5>
+      <button>$5.50 Select Men's Body Care</button>
+      <button>$4.95 Select Body Care</button>
+    </section>
+
+    <section id="product-gallery">
+      <h2>All Body Care</h2>
+      <div class="product-grid">
+        <!-- Repeat product items -->
+        <div class="product-item">
+          <img src="https://example.com/product-image.jpg" alt="Coconut Pineapple" />
+          <h5>New!</h5>
+          <h3>Coconut Pineapple</h3>
+          <p>Fine Fragrance Mist</p>
+          <div class="price">
+            <span class="original-price">$16.50</span>
+            <span class="discount-price">$8.25</span>
           </div>
+          <button>ADD TO BAG</button>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
+  </main>
 
-    <!-- Main Content -->
-    <main>
-      <section id="offers" class="text-center">
-        <h5>TOP OFFERS</h5>
-        <button>$5.50 Select Men's Body Care</button>
-        <button>$4.95 Select Body Care</button>
-      </section>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Bath and Body Works. All rights reserved.</p>
+  </footer>
+</body>
 
-      <section id="product-gallery">
-        <h2>All Body Care</h2>
-        <div class="product-grid">
-          <!-- Repeat product items -->
-          <div class="product-item">
-            <img
-              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6076a305/crop/026477886_crop.jpg"
-              alt="Coconut Pineapple"
-            />
-            <h5>New!</h5>
-            <h3>Coconut Pineapple</h3>
-            <p>Fine Fragrance Mist</p>
-            <div class="price">
-              <span class="original-price">$16.50</span>
-              <span class="discount-price">$8.25</span>
-            </div>
-            <button>ADD TO BAG</button>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Bath and Body Works. All rights reserved.</p>
-    </footer>
-  </body>
 </html>

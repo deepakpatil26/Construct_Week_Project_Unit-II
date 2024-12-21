@@ -1,139 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cart | Bath & Body Works</title>
-    <link rel="stylesheet" href="./styles/cart.css" />
-  </head>
-  <body>
-    <!-- Header Section -->
-    <header id="Header-div">
-      <!-- Top Announcement Bar -->
-      <div id="H-one" class="announcement">
-        <span>Today only! FREE SHIPPING ON $50 ORDERS</span>
-        <span>Code: TREASURE</span>
-        <span><a href="#">DETAILS</a></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | Bath & Body Works</title>
+  <link rel="stylesheet" href="./styles/cart.css" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header id="Header-div">
+    <!-- Top Announcement Bar -->
+    <div id="H-one" class="announcement">
+      <span>Today only! FREE SHIPPING ON $50 ORDERS</span>
+      <span>Code: TREASURE</span>
+      <span><a href="#">DETAILS</a></span>
+    </div>
+
+    <!-- Store Pickup -->
+    <div id="H-two">
+      <div id="two-one">
+        <img src="https://example.com/store-pickup-icon.svg" alt="Store Pickup" />
+        <span>PICK UP IN STORE</span>
+        <a href="#">Set Store</a>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav id="H-tree">
+      <div id="logo">
+        <img src="https://example.com/logo.svg" alt="Bath & Body Works Logo" />
+      </div>
+      <div id="search">
+        <input type="search" placeholder="Search by fragrance..." id="search-box" />
+        <img src="https://example.com/search-icon.svg" alt="Search Icon" />
+      </div>
+      <div id="account-cart">
+        <a href="login.html"><img src="https://example.com/account-icon.svg" alt="My Account" /></a>
+        <a href="cart.html"><img src="https://example.com/cart-icon.svg" alt="Shopping Cart" /></a>
+      </div>
+    </nav>
+
+    <!-- Dropdown Navigation -->
+    <div id="H-Four">
+      <div class="dropdown">
+        <button class="dropbtn">ALL SALE</button>
+        <div class="dropdown-content">
+          <a href="#">NEW & NOW</a>
+          <a href="#">EXPLORE BEST SELLERS</a>
+          <a href="#">Aromatherapy Shop</a>
+          <a href="#">Laundry Fragrances</a>
+          <a href="#">Best Sellers</a>
+          <a href="#">50-75% Off Select Sale</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">BODY CARE</button>
+        <div class="dropdown-content">
+          <a href="#">BATH & SHOWER</a>
+          <a href="#">MOISTURIZERS</a>
+          <a href="#">All Bath & Shower</a>
+          <a href="#">Bubble Bath</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h2 id="head">My Cart</h2>
+    <section id="main">
+      <!-- Cart Items Section -->
+      <div id="cartitem">
+        <!-- Dynamically filled with JavaScript -->
       </div>
 
-      <!-- Store Pickup -->
-      <div id="H-two">
-        <div id="two-one">
-          <img
-            src="https://cdn.example.com/store-pickup-icon.svg"
-            alt="Store Pickup"
-          />
-          <span>PICK UP IN STORE</span>
-          <a href="#">Set Store</a>
+      <!-- Price Details Section -->
+      <div id="Total">
+        <h1>Price Details</h1>
+        <hr />
+        <table>
+          <thead>
+            <tr>
+              <th>Total Quantity</th>
+              <th>Total Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="quantity">3</td>
+              <td id="totalprice">$20</td>
+            </tr>
+          </tbody>
+        </table>
+        <p id="coupantitle">Available Coupons</p>
+        <div id="coupansection">
+          <p id="coupans">MASAI30</p>
+          <button id="promobtn">Apply Promo</button>
         </div>
+        <button id="place">
+          <a href="shipping_page.html">Check Out</a>
+        </button>
       </div>
+    </section>
+  </main>
 
-      <!-- Main Navigation -->
-      <nav id="H-tree">
-        <div id="logo">
-          <img
-            src="https://cdn.example.com/logo.svg"
-            alt="Bath & Body Works Logo"
-          />
-        </div>
-        <div id="search">
-          <input
-            type="search"
-            placeholder="Search by fragrance..."
-            id="search-box"
-          />
-          <img
-            src="https://cdn.example.com/search-icon.svg"
-            alt="Search Icon"
-          />
-        </div>
-        <div id="account-cart">
-          <a href="login.html">
-            <img
-              src="https://cdn.example.com/account-icon.svg"
-              alt="My Account"
-            />
-          </a>
-          <a href="cart.html">
-            <img
-              src="https://cdn.example.com/cart-icon.svg"
-              alt="Shopping Cart"
-            />
-          </a>
-        </div>
-      </nav>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Bath and Body Works. All rights reserved.</p>
+  </footer>
 
-      <!-- Dropdown Navigation -->
-      <div id="H-Four">
-        <div class="dropdown">
-          <button class="dropbtn">ALL SALE</button>
-          <div class="dropdown-content">
-            <a href="#">NEW & NOW</a>
-            <a href="#">EXPLORE BEST SELLERS</a>
-            <a href="#">Aromatherapy Shop</a>
-            <a href="#">Laundry Fragrances</a>
-            <a href="#">Best Sellers</a>
-            <a href="#">50-75% Off Select Sale</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">BODY CARE</button>
-          <div class="dropdown-content">
-            <a href="#">BATH & SHOWER</a>
-            <a href="#">MOISTURIZERS</a>
-            <a href="#">All Bath & Shower</a>
-            <a href="#">Bubble Bath</a>
-          </div>
-        </div>
-        <!-- Add more dropdowns as needed -->
-      </div>
-    </header>
+  <script src="./scripts/cart.js"></script>
+</body>
 
-    <!-- Main Content -->
-    <main>
-      <h2 id="head">My Cart</h2>
-      <section id="main">
-        <!-- Cart Items Section -->
-        <div id="cartitem">
-          <!-- Dynamically filled with JavaScript -->
-        </div>
-
-        <!-- Price Details Section -->
-        <div id="Total">
-          <h1>Price Details</h1>
-          <hr />
-          <table>
-            <thead>
-              <tr>
-                <th>Total Quantity</th>
-                <th>Total Price</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td id="quantity">3</td>
-                <td id="totalprice">$20</td>
-              </tr>
-            </tbody>
-          </table>
-          <p id="coupantitle">Available Coupons</p>
-          <div id="coupansection">
-            <p id="coupans">MASAI30</p>
-            <button id="promobtn">Apply Promo</button>
-          </div>
-          <button id="place">
-            <a href="shipping_page.html">Check Out</a>
-          </button>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Bath and Body Works. All rights reserved.</p>
-    </footer>
-
-    <script src="./scripts/cart.js"></script>
-  </body>
 </html>

@@ -1,80 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/login.css" />
-    <title>My Account | Bath & Body Works</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="index.html" class="breadcrumb">Home</a> / SIGN IN OR SIGN UP
-      </nav>
-    </header>
 
-    <main class="main-container">
-      <section class="poster-section">
-        <img
-          src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png"
-          class="banner-image"
-          alt="Promotional Banner"
-        />
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/login.css" />
+  <title>My Account | Bath & Body Works</title>
+</head>
 
-      <section class="content-section">
-        <h2>Sign In or Sign Up</h2>
-        <div class="form-container">
-          <div class="form-box">
-            <div class="form-header">
-              <h3>SIGN IN</h3>
-              <p>If you already have an account, sign in below</p>
-            </div>
-            <form id="signInForm" class="form">
-              <label for="loginEmail">Email Address</label>
-              <input
-                type="email"
-                id="loginEmail"
-                placeholder="Enter your email"
-                required
-              />
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="breadcrumb">Home</a> / SIGN IN OR SIGN UP
+    </nav>
+  </header>
 
-              <label for="loginPassword">Password</label>
-              <input
-                type="password"
-                id="loginPassword"
-                placeholder="Enter your password"
-                required
-              />
+  <main class="main-container">
+    <section class="poster-section">
+      <img
+        src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67bc4699/images/banners/sign-in_d.png"
+        class="banner-image" alt="Promotional Banner" />
+    </section>
 
-              <a href="#" class="forgot-password">Forgot Password?</a>
-              <button type="submit" class="btn btn-primary">SIGN IN</button>
-            </form>
+    <section class="content-section">
+      <h2>Sign In or Sign Up</h2>
+      <div class="form-container">
+        <div class="form-box">
+          <div class="form-header">
+            <h3>SIGN IN</h3>
+            <p>If you already have an account, sign in below</p>
           </div>
+          <form id="signInForm" class="form">
+            <label for="loginEmail">Email Address</label>
+            <input type="email" id="loginEmail" placeholder="Enter your email" required />
 
-          <div class="divider">OR</div>
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" placeholder="Enter your password" required />
 
-          <div class="form-box">
-            <div class="form-header">
-              <h3>SIGN UP</h3>
-              <p>Create an account to access the best of your favorite store</p>
-            </div>
-            <div class="signup-container">
-              <img
-                src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwf946a6ac/images/loyalty/July19/nonloyalty_5thmkt_signuptile_D.png"
-                alt="Sign Up Image"
-                class="signup-image"
-              />
-              <button class="btn btn-secondary" id="createAccount">
-                CREATE AN ACCOUNT
-              </button>
-            </div>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <button type="submit" class="btn btn-primary">SIGN IN</button>
+          </form>
+        </div>
+
+        <div class="divider">OR</div>
+
+        <div class="form-box">
+          <div class="form-header">
+            <h3>SIGN UP</h3>
+            <p>Create an account to access the best of your favorite store</p>
+          </div>
+          <div class="signup-container">
+            <img
+              src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwf946a6ac/images/loyalty/July19/nonloyalty_5thmkt_signuptile_D.png"
+              alt="Sign Up Image" class="signup-image" />
+            <button class="btn btn-secondary" id="createAccount">CREATE AN ACCOUNT</button>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <script src="./scripts/login.js"></script>
-  </body>
+  <script src="./scripts/login.js"></script>
+</body>
+
 </html>

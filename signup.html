@@ -1,51 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/signup.css" />
-    <title>Create Account | Bath & Body Works</title>
-  </head>
-  <body>
-    <div class="main-container">
-      <nav><a href="/index.html">Home</a> / CREATE AN ACCOUNT</nav>
-      <section class="input-container">
-        <img
-          src="https://cdn.example.com/signup-banner.png"
-          alt="Sign Up Banner"
-          class="banner-img"
-        />
-        <h2>Create an Account</h2>
-        <form action="/signup" method="POST">
-          <div class="input-box">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" required />
-          </div>
-          <div class="input-box">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" required />
-          </div>
-          <div class="input-box">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="input-box">
-            <label for="password">Password</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              minlength="8"
-              required
-            />
-          </div>
-          <button type="submit" class="submit-btn">Create Account</button>
-        </form>
-        <div class="help-section">
-          <p>Questions? We’re here for you! Call us at 1-800-756-5005.</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/signup.css" />
+  <title>Create Account | Bath & Body Works</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <nav><a href="/index.html">Home</a> / CREATE AN ACCOUNT</nav>
+    <section class="input-container">
+      <img src="https://cdn.example.com/signup-banner.png" alt="Sign Up Banner" class="banner-img" />
+      <h2>Create an Account</h2>
+      <form action="/signup" method="POST">
+        <div class="input-box">
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" required />
         </div>
-      </section>
-    </div>
-  </body>
+        <div class="input-box">
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+        <div class="input-box">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="input-box">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" minlength="8" required />
+        </div>
+        <button type="submit" class="submit-btn">Create Account</button>
+      </form>
+      <div class="help-section">
+        <p>Questions? We’re here for you! Call us at 1-800-756-5005.</p>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>
 <script src="./scripts/signup.js"></script>

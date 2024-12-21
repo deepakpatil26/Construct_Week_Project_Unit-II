@@ -1,179 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shipping | Bath & Body Works</title>
-    <link rel="stylesheet" href="./styles/shipping_page.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="navbar">
-      <div class="heading">
-        <img
-          src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwa9385fe9/images/svg-icons/Logos-main.svg"
-          alt="Bath & Body Works Logo"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shipping | Bath & Body Works</title>
+  <link rel="stylesheet" href="./styles/shipping_page.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="heading">
+      <img
+        src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwa9385fe9/images/svg-icons/Logos-main.svg"
+        alt="Bath & Body Works Logo" />
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="shipping-form">
+      <form action="payment.html" method="POST">
+        <!-- Shipping Address -->
+        <fieldset>
+          <legend>Shipping Address</legend>
+          <div class="input-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required />
+          </div>
+          <div class="input-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required />
+          </div>
+          <div class="input-group">
+            <label for="address1">Address 1</label>
+            <input type="text" id="address1" name="address1" required />
+          </div>
+          <div class="input-group">
+            <label for="address2">Address 2</label>
+            <input type="text" id="address2" name="address2" />
+          </div>
+          <div class="input-group">
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+              <option value="" disabled selected>Select...</option>
+              <option value="India">India</option>
+              <option value="China">China</option>
+              <option value="England">England</option>
+              <option value="Ukraine">Ukraine</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required />
+          </div>
+          <div class="input-group">
+            <label for="state">State</label>
+            <select id="state" name="state" required>
+              <option value="" disabled selected>Select...</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Goa">Goa</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="zipcode">Zipcode</label>
+            <input type="number" id="zipcode" name="zipcode" required />
+          </div>
+          <div class="input-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" id="useForBilling" name="useForBilling" />
+              Use address for billing
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- Shipping Method -->
+        <fieldset class="shipping-method">
+          <legend>Shipping Method</legend>
+          <div>
+            <input type="radio" id="standard" name="shippingMethod" value="Standard" required />
+            <label for="standard">Standard (4 - 8 working days)</label>
+          </div>
+          <div>
+            <input type="radio" id="expedited1" name="shippingMethod" value="Expedited" />
+            <label for="expedited1">Expedited</label>
+          </div>
+          <div>
+            <input type="radio" id="expedited2" name="shippingMethod" value="Overnight" />
+            <label for="expedited2">Overnight</label>
+          </div>
+        </fieldset>
+        <button type="submit" class="btn">Go to Billing</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="email-subscription">
+      <p>Get email offers and latest news from Bath & Body Works!</p>
+      <form>
+        <input type="email" id="email" placeholder="Enter your email" required />
+        <input type="email" id="confirmEmail" placeholder="Confirm your email" required />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <nav class="footer-links">
+      <div>
+        <h3>My Account</h3>
+        <ul>
+          <li><a href="signup.html">Sign In or Sign Up</a></li>
+          <li><a href="#">Order History</a></li>
+          <li><a href="#">My Love-It List</a></li>
+        </ul>
       </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container">
-      <section class="shipping-form">
-        <form action="payment.html" method="POST">
-          <!-- Shipping Address -->
-          <fieldset>
-            <legend>Shipping Address</legend>
-            <div class="input-group">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" name="firstName" required />
-            </div>
-            <div class="input-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" name="lastName" required />
-            </div>
-            <div class="input-group">
-              <label for="address1">Address 1</label>
-              <input type="text" id="address1" name="address1" required />
-            </div>
-            <div class="input-group">
-              <label for="address2">Address 2</label>
-              <input type="text" id="address2" name="address2" />
-            </div>
-            <div class="input-group">
-              <label for="country">Country</label>
-              <select id="country" name="country" required>
-                <option value="" disabled selected>Select...</option>
-                <option value="India">India</option>
-                <option value="China">China</option>
-                <option value="England">England</option>
-                <option value="Ukraine">Ukraine</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <label for="city">City</label>
-              <input type="text" id="city" name="city" required />
-            </div>
-            <div class="input-group">
-              <label for="state">State</label>
-              <select id="state" name="state" required>
-                <option value="" disabled selected>Select...</option>
-                <option value="Maharashtra">Maharashtra</option>
-                <option value="Gujarat">Gujarat</option>
-                <option value="Uttar Pradesh">Uttar Pradesh</option>
-                <option value="Goa">Goa</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <label for="zipcode">Zipcode</label>
-              <input type="number" id="zipcode" name="zipcode" required />
-            </div>
-            <div class="input-group">
-              <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" required />
-            </div>
-            <div class="checkbox-group">
-              <label>
-                <input
-                  type="checkbox"
-                  id="useForBilling"
-                  name="useForBilling"
-                />
-                Use address for billing
-              </label>
-            </div>
-          </fieldset>
-
-          <!-- Shipping Method -->
-          <fieldset class="shipping-method">
-            <legend>Shipping Method</legend>
-            <div>
-              <input
-                type="radio"
-                id="standard"
-                name="shippingMethod"
-                value="Standard"
-                required
-              />
-              <label for="standard">Standard (4 - 8 working days)</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="expedited1"
-                name="shippingMethod"
-                value="Expedited"
-              />
-              <label for="expedited1">Expedited</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                id="expedited2"
-                name="shippingMethod"
-                value="Overnight"
-              />
-              <label for="expedited2">Overnight</label>
-            </div>
-          </fieldset>
-          <button type="submit" class="btn">Go to Billing</button>
-        </form>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-      <section class="email-subscription">
-        <p>Get email offers and latest news from Bath & Body Works!</p>
-        <form>
-          <input
-            type="email"
-            id="email"
-            placeholder="Enter your email"
-            required
-          />
-          <input
-            type="email"
-            id="confirmEmail"
-            placeholder="Confirm your email"
-            required
-          />
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-      <nav class="footer-links">
-        <div>
-          <h3>My Account</h3>
-          <ul>
-            <li><a href="signup.html">Sign In or Sign Up</a></li>
-            <li><a href="#">Order History</a></li>
-            <li><a href="#">My Love-It List</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Customer Care</h3>
-          <ul>
-            <li><a href="#">Help & FAQs</a></li>
-            <li><a href="#">Shipping</a></li>
-            <li><a href="#">Returns & Exchanges</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Discover</h3>
-          <ul>
-            <li><a href="#">Shop by Fragrance</a></li>
-            <li><a href="#">New & Now</a></li>
-            <li><a href="#">Our Story</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="social-media">
-        <h3>Follow Us</h3>
-        <a href="https://www.instagram.com/bathandbodyworksindia/">Instagram</a>
-        <a href="https://www.facebook.com/bathandbodyworksindia">Facebook</a>
+      <div>
+        <h3>Customer Care</h3>
+        <ul>
+          <li><a href="#">Help & FAQs</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <div>
+        <h3>Discover</h3>
+        <ul>
+          <li><a href="#">Shop by Fragrance</a></li>
+          <li><a href="#">New & Now</a></li>
+          <li><a href="#">Our Story</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="social-media">
+      <h3>Follow Us</h3>
+      <a href="https://www.instagram.com/bathandbodyworksindia/">Instagram</a>
+      <a href="https://www.facebook.com/bathandbodyworksindia">Facebook</a>
+    </div>
+  </footer>
+</body>
+
 </html>
 <script src="./scripts/shipping_page.js"></script>
